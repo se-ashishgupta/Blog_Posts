@@ -115,6 +115,12 @@ const memoizedValue = useMemo(() => computeExpensiveValue(), [dependency]);
 <input type="text" defaultValue="Initial Value" />
 ```
 
+## 9. Ignoring React DevTools Warnings
+
+**Mistake:** Ignoring warnings and errors provided by React DevTools can lead to hard-to-debug issues.
+
+**Solution:** Make a habit of regularly checking React DevTools and addressing any warnings, such as key prop issues or `useEffect` dependency problems. These tools help you keep your components performant and bug-free.
+
 ---
 
 ## Conclusion
