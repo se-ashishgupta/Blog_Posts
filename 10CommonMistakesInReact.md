@@ -101,33 +101,7 @@ const MemoizedComponent = React.memo(MyComponent);
 const memoizedValue = useMemo(() => computeExpensiveValue(), [dependency]);
 ```
 
-## 8. Not Handling Errors Gracefully
-
-**Mistake:** Errors in a component can break the entire application if not properly caught.
-
-**Solution:** Use error boundaries to catch errors in React components, which helps keep the application stable and displays fallback UIs gracefully.
-
-```jsx
-class ErrorBoundary extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { hasError: false };
-  }
-
-  static getDerivedStateFromError() {
-    return { hasError: true };
-  }
-
-  render() {
-    if (this.state.hasError) {
-      return <h1>Something went wrong.</h1>;
-    }
-    return this.props.children;
-  }
-}
-```
-
-## 9. Mixing Controlled and Uncontrolled Components
+## 8. Mixing Controlled and Uncontrolled Components
 
 **Mistake:** Mixing controlled and uncontrolled inputs in forms can lead to unexpected behavior.
 
@@ -140,12 +114,6 @@ class ErrorBoundary extends React.Component {
 // Uncontrolled Component
 <input type="text" defaultValue="Initial Value" />
 ```
-
-## 10. Ignoring React DevTools Warnings
-
-**Mistake:** Ignoring warnings and errors provided by React DevTools can lead to hard-to-debug issues.
-
-**Solution:** Make a habit of regularly checking React DevTools and addressing any warnings, such as key prop issues or `useEffect` dependency problems. These tools help you keep your components performant and bug-free.
 
 ---
 
