@@ -1,4 +1,4 @@
-# 10 Common React Mistakes and How to Avoid Them
+# Some Common React Mistakes and How to Avoid Them
 
 React is a powerful library for building user interfaces, but even experienced developers can fall into certain pitfalls. Here are 10 common mistakes React developers make, along with tips on how to avoid them.
 
@@ -15,8 +15,6 @@ state.count++;
 // Correct
 setState((prevState) => prevState + 1);
 ```
-
-````
 
 ## 2. Forgetting to Clean Up Side Effects in `useEffect`
 
@@ -154,4 +152,5 @@ class ErrorBoundary extends React.Component {
 React development requires careful attention to how data flows, how components re-render, and how hooks are used. Avoiding these common mistakes will make your applications more stable, maintainable, and efficient. By understanding and applying these best practices, you can significantly enhance your skills as a React developer.
 
 ```
-````
+
+```
