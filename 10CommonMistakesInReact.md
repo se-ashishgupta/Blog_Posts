@@ -105,7 +105,7 @@ const memoizedValue = useMemo(() => computeExpensiveValue(), [dependency]);
 
 **Mistake:** Mixing controlled and uncontrolled inputs in forms can lead to unexpected behavior.
 
-**Solution:** Decide whether the input is controlled (using `value` and `onChange`) or uncontrolled (using `defaultValue`). Stick to one approach to maintain consistency.
+**Solution:** Decide whether the input is controlled (using `value` and `onChange`) or uncontrolled (using `defaultValue`).
 
 ```jsx
 // Controlled Component
